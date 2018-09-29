@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">StartAndroid</string>
+    <string name="app_name">Ed Hello"</string>
+    <string name="userName">User Name</string>
+    <string name="Password">Password</string>
 </resources>

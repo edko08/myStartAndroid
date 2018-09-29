@@ -19,21 +19,30 @@
             android:gravity="center"
             android:orientation="vertical"
             android:layout_marginVertical="@android:dimen/thumbnail_height"
-            >
+            tools:ignore="ExtraText">
 
             <EditText
                 android:id="@+id/editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
+                android:hint="@string/userName"
                 tools:layout_conversion_absoluteHeight="30dp"
-                tools:layout_conversion_absoluteWidth="30dp" />
+                tools:layout_conversion_absoluteWidth="30dp"
+                android:singleLine="true"
+                android:clickable="true"
+                />
 
             <EditText
                 android:id="@+id/editText2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword" />
+                android:hint="@string/Password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:focusable="true"
+                android:clickable="true"
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -43,14 +52,16 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/button_ok"
+                style="@style/Widget.AppCompat.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@android:string/ok"
-                tools:ignore="ButtonStyle"
                 android:layout_weight="1"
-                />
+                tools:ignore="ButtonStyle" />
 
             <Button
+                android:id="@+id/button_cancel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@android:string/cancel"
