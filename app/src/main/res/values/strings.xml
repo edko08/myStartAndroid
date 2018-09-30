@@ -2,4 +2,6 @@
     <string name="app_name">Ed Hello"</string>
     <string name="userName">User Name</string>
     <string name="Password">Password</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>

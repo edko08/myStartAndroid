@@ -1,22 +1,23 @@
 package com.ed.startandroid;
 
+import android.app.Activity;
 import android.view.View;
 
 public class EventCover implements View.OnClickListener {
-    private final MainActivity main;
+    private LoginActivity loginActivity;
 
-     EventCover(MainActivity main) {
-        this.main = main;
+     EventCover(LoginActivity loginActivity) {
+        this.loginActivity = loginActivity;
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button_ok:
-                main.onClickOk();
+                loginActivity.onClickOk();
                 break;
             case R.id.button_cancel:
-                main.onClickCancel();
+                loginActivity.onClickCancel();
                 break;
         }
     }
